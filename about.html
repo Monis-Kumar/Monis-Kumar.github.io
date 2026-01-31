@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — LIFEWEAR</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .about-hero {
+      background: linear-gradient(135deg, var(--light-gray) 0%, var(--medium-gray) 100%);
+      padding: 4rem 2rem;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .about-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      margin-bottom: 4rem;
+    }
+
+    .about-image {
+      width: 100%;
+      aspect-ratio: 4/3;
+      background-color: var(--light-gray);
+      border: 2px solid var(--medium-gray);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-text h2 {
+      margin-bottom: 1rem;
+    }
+
+    .about-text p {
+      color: var(--dark-gray);
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .value-card {
+      background-color: var(--light-gray);
+      padding: 2rem;
+      border: 2px dashed var(--medium-gray);
+      text-align: center;
+      transition: all var(--transition);
+    }
+
+    .value-card:hover {
+      background-color: var(--medium-gray);
+      border-style: solid;
+    }
+
+    .value-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .value-card h3 {
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline {
+      position: relative;
+      margin: 3rem 0;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      align-items: flex-start;
+    }
+
+    .timeline-year {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--accent-red);
+    }
+
+    .timeline-content {
+      background-color: var(--light-gray);
+      padding: 1.5rem;
+      border-left: 3px solid var(--accent-red);
+    }
+
+    .timeline-content h4 {
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-content p {
+      color: var(--dark-gray);
+      font-size: 0.95rem;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .team-member {
+      background-color: var(--light-gray);
+      border: 1px solid var(--medium-gray);
+      overflow: hidden;
+      transition: all var(--transition);
+    }
+
+    .team-member:hover {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transform: translateY(-5px);
+    }
+
+    .team-photo {
+      width: 100%;
+      aspect-ratio: 1;
+      background-color: var(--medium-gray);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+
+    .team-info {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .team-info h4 {
+      font-size: 0.95rem;
+      margin-bottom: 0.25rem;
+      text-transform: uppercase;
+    }
+
+    .team-info p {
+      font-size: 0.85rem;
+      color: var(--dark-gray);
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        grid-template-columns: 1fr;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .timeline-item {
+        grid-template-columns: 100px 1fr;
+        gap: 1rem;
+      }
+
+      .timeline-year {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-container">
+    <div class="logo">LIFEWEAR</div>
+    
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="women.html">Women</a>
+      <a href="men.html">Men</a>
+      <a href="kids.html">Kids</a>
+      <a href="collections.html">Collections</a>
+    </nav>
+    
+    <div class="nav-icons">
+      <span class="nav-icon search-icon" title="Search">🔍</span>
+      <span class="nav-icon" title="Account">👤</span>
+      <span class="nav-icon" title="Favorites">♡</span>
+      <span class="nav-icon" title="Cart">🛒</span>
+    </div>
+    
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu">
+  <div class="mobile-menu-close">✕</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="women.html">Women</a>
+    <a href="men.html">Men</a>
+    <a href="kids.html">Kids</a>
+    <a href="collections.html">Collections</a>
+    <a href="about.html">About</a>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section class="about-hero">
+  <h1>About LIFEWEAR</h1>
+  <p style="font-size: 1.2rem; color: var(--dark-gray);">Intelligent Simplicity in Everyday Fashion</p>
+</section>
+
+<!-- MISSION -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
+  <div class="about-section">
+    <div class="about-image">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%23f0f0f0' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='16' fill='%23999' text-anchor='middle' dy='.3em'%3EMission Image%3C/text%3E%3C/svg%3E" alt="Our Mission">
+    </div>
+    <div class="about-text">
+      <h2>Our Mission</h2>
+      <p>Since 1984, LIFEWEAR has been committed to creating clothing that brings people together. We believe in the power of simplicity—well-designed essentials that work hard so you don't have to.</p>
+      <p>Our philosophy is grounded in three core principles: quality that lasts, design that inspires, and accessibility for everyone. Every piece we create is a testament to our dedication to these values.</p>
+      <p>We're not just making clothes. We're creating lifewear—pieces that become part of your daily life, pieces that you trust and love.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
+  <h2 style="text-align: center; margin-bottom: 2rem;">Our Values</h2>
+  <div class="values-grid">
+    <div class="value-card">
+      <div class="value-icon">♻️</div>
+      <h3>Sustainability</h3>
+      <p>We prioritize sustainable materials and ethical manufacturing practices to protect our planet for future generations.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">✨</div>
+      <h3>Quality</h3>
+      <p>We invest in the finest materials and innovative technologies to deliver products that last and perform beautifully.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">🌍</div>
+      <h3>Inclusivity</h3>
+      <p>We believe fashion is for everyone. Our collections span all ages, sizes, and styles to celebrate diversity.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INNOVATION -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
+  <div class="about-section" style="flex-direction: row-reverse;">
+    <div class="about-image">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%23f0f0f0' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='16' fill='%23999' text-anchor='middle' dy='.3em'%3EInnovation%3C/text%3E%3C/svg%3E" alt="Innovation">
+    </div>
+    <div class="about-text">
+      <h2>Fabric Innovation</h2>
+      <p>Our proprietary <strong>Airism</strong> technology is the result of decades of research and development. This revolutionary fabric technology provides superior moisture-wicking, quick-dry capabilities, and exceptional breathability.</p>
+      <p>We're constantly exploring new materials and techniques to improve comfort and sustainability. From organic cotton to advanced synthetic blends, we select the best fabrics for each purpose.</p>
+      <p>Innovation isn't just about technology—it's about listening to our customers and creating products that truly improve their lives.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
+  <h2 style="margin-bottom: 2rem;">Our Story</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-year">1984</div>
+      <div class="timeline-content">
+        <h4>The Beginning</h4>
+        <p>LIFEWEAR is founded with a simple vision: to create comfortable, quality basics for everyday life.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">1995</div>
+      <div class="timeline-content">
+        <h4>International Expansion</h4>
+        <p>We expand beyond our home market and enter Asian markets, bringing LIFEWEAR to millions of new customers.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2002</div>
+      <div class="timeline-content">
+        <h4>Airism Launch</h4>
+        <p>We introduce our revolutionary Airism fabric technology, changing the game for moisture-wicking apparel.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2010</div>
+      <div class="timeline-content">
+        <h4>Global Leader</h4>
+        <p>LIFEWEAR becomes a leading global fashion brand with stores in over 100 countries and millions of loyal customers.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2020</div>
+      <div class="timeline-content">
+        <h4>Sustainability Commitment</h4>
+        <p>We launch our ambitious sustainability initiative, committing to carbon neutrality and 100% sustainable materials by 2030.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2026</div>
+      <div class="timeline-content">
+        <h4>The Future</h4>
+        <p>We continue innovating with our latest collections, blending cutting-edge technology with timeless design.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
+  <h2 style="margin-bottom: 2rem;">Our Team</h2>
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="team-photo">👨‍💼</div>
+      <div class="team-info">
+        <h4>John Smith</h4>
+        <p>CEO & Founder</p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="team-photo">👩‍💼</div>
+      <div class="team-info">
+        <h4>Emily Chen</h4>
+        <p>Chief Design Officer</p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="team-photo">👨‍💼</div>
+      <div class="team-info">
+        <h4>Michael Johnson</h4>
+        <p>VP Operations</p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <div class="team-photo">👩‍💼</div>
+      <div class="team-info">
+        <h4>Sarah Williams</h4>
+        <p>Sustainability Lead</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="about.html">About Us</a>
+      <a href="#">Help & Support</a>
+      <a href="#">Stores</a>
+      <a href="#">Careers</a>
+      <a href="#">Sustainability</a>
+    </div>
+
+    <div style="margin-top: 2rem; font-size: 1.25rem; letter-spacing: 1px;">
+      Follow us: 
+      <span style="cursor: pointer; margin: 0 0.5rem;">f</span>
+      <span style="cursor: pointer; margin: 0 0.5rem;">𝕏</span>
+      <span style="cursor: pointer; margin: 0 0.5rem;">📷</span>
+    </div>
+
+    <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--dark-gray);">© 2026 LIFEWEAR. All rights reserved.</p>
+  </div>
+
+  <div class="marquee">
+    <div class="marquee-content">
+      ✦ Timeless Quality Since 1984 ✦ Intelligent Simplicity ✦ Made for Everyone ✦ Timeless Quality Since 1984 ✦ Intelligent Simplicity ✦ Made for Everyone ✦
+    </div>
+  </div>
+</footer>
+
+<!-- SEARCH MODAL -->
+<div class="modal" id="searchModal">
+  <div class="modal-content">
+    <div class="modal-title-bar">
+      <span>SEARCH</span>
+      <span class="modal-close">✕</span>
+    </div>
+    <input type="text" class="search-input" placeholder="Search...">
+    <div class="search-results">
+      <div class="search-result">History</div>
+      <div class="search-result">Values</div>
+      <div class="search-result">Team</div>
+      <div class="search-result">Careers</div>
+      <div class="search-result">Sustainability</div>
+      <div class="search-result">Innovation</div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIFEWEAR — Intelligent Simplicity</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-container">
+    <div class="logo">LIFEWEAR</div>
+    
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="women.html">Women</a>
+      <a href="men.html">Men</a>
+      <a href="kids.html">Kids</a>
+      <a href="collections.html">Collections</a>
+    </nav>
+    
+    <div class="nav-icons">
+      <span class="nav-icon search-icon" title="Search">🔍</span>
+      <span class="nav-icon" title="Account">👤</span>
+      <span class="nav-icon" title="Favorites">♡</span>
+      <span class="nav-icon" title="Cart">🛒</span>
+    </div>
+    
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu">
+  <div class="mobile-menu-close">✕</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="women.html">Women</a>
+    <a href="men.html">Men</a>
+    <a href="kids.html">Kids</a>
+    <a href="collections.html">Collections</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="nav-icons" style="flex-direction: column; gap: 1rem;">
+    <a href="#" class="search-icon">Search</a>
+    <a href="#">Account</a>
+    <a href="#">Favorites</a>
+    <a href="#">Cart</a>
+  </div>
+</div>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Intelligent Simplicity</h1>
+    <p class="hero-tagline">Spring/Summer 2026 Collection</p>
+    <button class="btn primary" onclick="document.querySelector('#new-arrivals').scrollIntoView({behavior: 'smooth'})">Explore</button>
+  </div>
+</section>
+
+<!-- NEW ARRIVALS -->
+<section id="new-arrivals">
+  <h2>New Arrivals</h2>
+  <div class="grid grid-4">
+    <div class="product-card">
+      <div class="product-image">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='16' fill='%23999' text-anchor='middle' dy='.3em'%3EProduct 1%3C/text%3E%3C/svg%3E" alt="Airism Cotton T-Shirt">
+      </div>
+      <div class="product-info">
+        <div class="product-name">Airism Cotton T-Shirt</div>
+        <div class="product-price">$29.90</div>
+        <button class="btn quick-view-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='16' fill='%23999' text-anchor='middle' dy='.3em'%3EProduct 2%3C/text%3E%3C/svg%3E" alt="Ultra Light Down Jacket">
+      </div>
+      <div class="product-info">
+        <div class="product-name">Ultra Light Down Jacket</div>
+        <div class="product-price">$99.90</div>
+        <button class="btn quick-view-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='16' fill='%23999' text-anchor='middle' dy='.3em'%3EProduct 3%3C/text%3E%3C/svg%3E" alt="Seamless Leggings">
+      </div>
+      <div class="product-info">
+        <div class="product-name">Seamless Leggings</div>
+        <div class="product-price">$39.90</div>
+        <button class="btn quick-view-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='16' fill='%23999' text-anchor='middle' dy='.3em'%3EProduct 4%3C/text%3E%3C/svg%3E" alt="Rayon Blouse">
+      </div>
+      <div class="product-info">
+        <div class="product-name">Rayon Blouse</div>
+        <div class="product-price">$49.90</div>
+        <button class="btn quick-view-btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED COLLECTION -->
+<section>
+  <h2>Featured: UT x Artist Collab</h2>
+  <div class="grid grid-3">
+    <div class="product-card">
+      <div class="product-image">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f0f0f0' width='300' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='14' fill='%23999' text-anchor='middle' dy='.3em'%3EUT Collection%3C/text%3E%3C/svg%3E" alt="UT Graphic Tee 1">
+      </div>
+      <div class="product-info">
+        <div class="product-name">UT Graphic Tee</div>
+        <div class="product-price">$19.90</div>
+        <button class="btn quick-view-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f0f0f0' width='300' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='14' fill='%23999' text-anchor='middle' dy='.3em'%3EUT Hoodie%3C/text%3E%3C/svg%3E" alt="UT Hoodie">
+      </div>
+      <div class="product-info">
+        <div class="product-name">UT Artist Hoodie</div>
+        <div class="product-price">$59.90</div>
+        <button class="btn quick-view-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f0f0f0' width='300' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='14' fill='%23999' text-anchor='middle' dy='.3em'%3EUT Tote Bag%3C/text%3E%3C/svg%3E" alt="UT Tote Bag">
+      </div>
+      <div class="product-info">
+        <div class="product-name">UT Tote Bag</div>
+        <div class="product-price">$14.90</div>
+        <button class="btn quick-view-btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIFESTYLE SECTION -->
+<section>
+  <h2>Lifestyle Inspiration</h2>
+  <div class="grid grid-2">
+    <div class="product-card">
+      <div class="product-image">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%23e8e8e8' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='16' fill='%23999' text-anchor='middle' dy='.3em'%3ELifestyle Image 1%3C/text%3E%3C/svg%3E" alt="Casual Urban Look">
+      </div>
+      <div class="product-info">
+        <div class="product-name">Casual Urban Style</div>
+        <p style="font-size: 0.9rem; color: var(--dark-gray);">Mix and match essentials for everyday looks.</p>
+        <button class="btn">Explore Collection</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%23e8e8e8' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='16' fill='%23999' text-anchor='middle' dy='.3em'%3ELifestyle Image 2%3C/text%3E%3C/svg%3E" alt="Sustainable Fashion">
+      </div>
+      <div class="product-info">
+        <div class="product-name">Sustainable Innovation</div>
+        <p style="font-size: 0.9rem; color: var(--dark-gray);">Engineered fabrics for a better tomorrow.</p>
+        <button class="btn">Learn More</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER & FOOTER -->
+<footer>
+  <section style="padding-top: 0;">
+    <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Join Our Newsletter</h3>
+    <form class="newsletter-form" style="max-width: 400px; margin: 0 auto 2rem;">
+      <div style="display: flex; gap: 0.5rem;">
+        <input type="email" placeholder="your@email.com" required style="flex: 1; padding: 0.75rem; border: 2px solid var(--primary-black); font-family: var(--font-sans); box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.8), inset -1px -1px 0 rgba(0, 0, 0, 0.2);">
+        <button type="submit" class="btn">Subscribe</button>
+      </div>
+    </form>
+  </section>
+
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="about.html">About Us</a>
+      <a href="#">Help & Support</a>
+      <a href="#">Stores</a>
+      <a href="#">Careers</a>
+      <a href="#">Sustainability</a>
+    </div>
+
+    <div style="margin-top: 2rem; font-size: 1.25rem; letter-spacing: 1px;">
+      Follow us: 
+      <span style="cursor: pointer; margin: 0 0.5rem;">f</span>
+      <span style="cursor: pointer; margin: 0 0.5rem;">𝕏</span>
+      <span style="cursor: pointer; margin: 0 0.5rem;">📷</span>
+    </div>
+
+    <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--dark-gray);">© 2026 LIFEWEAR. All rights reserved.</p>
+  </div>
+
+  <div class="marquee">
+    <div class="marquee-content">
+      ✦ Timeless Quality Since 1984 ✦ Intelligent Simplicity ✦ Made for Everyone ✦ Timeless Quality Since 1984 ✦ Intelligent Simplicity ✦ Made for Everyone ✦
+    </div>
+  </div>
+</footer>
+
+<!-- SEARCH MODAL -->
+<div class="modal" id="searchModal">
+  <div class="modal-content">
+    <div class="modal-title-bar">
+      <span>SEARCH</span>
+      <span class="modal-close">✕</span>
+    </div>
+    <input type="text" class="search-input" placeholder="Search products...">
+    <div class="search-results">
+      <div class="search-result" data-product="Airism">Airism Cotton</div>
+      <div class="search-result" data-product="Down">Ultra Down</div>
+      <div class="search-result" data-product="Leggings">Leggings</div>
+      <div class="search-result" data-product="Blouse">Rayon Blouse</div>
+      <div class="search-result" data-product="UT">UT Collab</div>
+      <div class="search-result" data-product="Hoodie">Artist Hoodie</div>
+    </div>
+  </div>
+</div>
+
+<!-- QUICK VIEW MODAL -->
+<div class="modal" id="quickViewModal">
+  <div class="modal-content">
+    <div class="modal-title-bar">
+      <span>QUICK VIEW</span>
+      <span class="modal-close quick-view-close">✕</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+      <div>
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='250'%3E%3Crect fill='%23f0f0f0' width='200' height='250'/%3E%3C/svg%3E" alt="Product Image" style="width: 100%; margin-bottom: 1rem;">
+        <div style="display: flex; gap: 0.5rem;">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50'%3E%3Crect fill='%23ddd' width='50' height='50'/%3E%3C/svg%3E" alt="Thumbnail" style="width: 50px; cursor: pointer; border: 2px solid var(--primary-black);">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50'%3E%3Crect fill='%23ddd' width='50' height='50'/%3E%3C/svg%3E" alt="Thumbnail" style="width: 50px; cursor: pointer; border: 1px solid var(--medium-gray);">
+        </div>
+      </div>
+      <div>
+        <h3>Premium Cotton T-Shirt</h3>
+        <p style="font-size: 1.25rem; color: var(--accent-red); font-weight: bold; margin: 1rem 0;">$29.90</p>
+        <p style="color: var(--dark-gray); margin-bottom: 1rem;">Soft, breathable 100% organic cotton. Perfect for any season.</p>
+        <p style="font-size: 0.9rem; margin-bottom: 1rem;"><strong>Fabric:</strong> Airism Cotton Blend</p>
+        <label style="display: block; margin-bottom: 1rem;">
+          <strong>Size:</strong><br>
+          <select style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; border: 2px solid var(--primary-black); font-family: var(--font-sans);">
+            <option>XS</option>
+            <option>S</option>
+            <option selected>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+        </label>
+        <button class="btn primary" style="width: 100%;">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

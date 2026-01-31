@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collections — LIFEWEAR</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .collection-hero {
+      background: linear-gradient(135deg, var(--light-gray) 0%, var(--medium-gray) 100%);
+      padding: 3rem 2rem;
+      text-align: center;
+      margin-bottom: 3rem;
+      border: 2px dashed var(--medium-gray);
+    }
+
+    .collection-card {
+      background-color: var(--primary-white);
+      border: 2px solid var(--primary-black);
+      overflow: hidden;
+      transition: all var(--transition);
+    }
+
+    .collection-card:hover {
+      box-shadow: 0 0 20px rgba(228, 0, 43, 0.3);
+      transform: translateY(-5px);
+    }
+
+    .collection-image {
+      width: 100%;
+      aspect-ratio: 1;
+      background-color: var(--light-gray);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-size: 4rem;
+    }
+
+    .collection-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .collection-info {
+      padding: 2rem;
+    }
+
+    .collection-info h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .collection-description {
+      font-size: 0.95rem;
+      color: var(--dark-gray);
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    .collection-badge {
+      display: inline-block;
+      background-color: var(--accent-red);
+      color: var(--primary-white);
+      padding: 0.25rem 0.75rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      letter-spacing: 0.5px;
+      border: 2px solid var(--accent-red);
+    }
+
+    .collection-stats {
+      display: flex;
+      gap: 1rem;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+      color: var(--dark-gray);
+    }
+
+    .collection-stat {
+      display: flex;
+      gap: 0.25rem;
+    }
+
+    @media (max-width: 768px) {
+      .collection-hero {
+        padding: 2rem 1rem;
+      }
+
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-container">
+    <div class="logo">LIFEWEAR</div>
+    
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="women.html">Women</a>
+      <a href="men.html">Men</a>
+      <a href="kids.html">Kids</a>
+      <a href="collections.html">Collections</a>
+    </nav>
+    
+    <div class="nav-icons">
+      <span class="nav-icon search-icon" title="Search">🔍</span>
+      <span class="nav-icon" title="Account">👤</span>
+      <span class="nav-icon" title="Favorites">♡</span>
+      <span class="nav-icon" title="Cart">🛒</span>
+    </div>
+    
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu">
+  <div class="mobile-menu-close">✕</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="women.html">Women</a>
+    <a href="men.html">Men</a>
+    <a href="kids.html">Kids</a>
+    <a href="collections.html">Collections</a>
+    <a href="about.html">About</a>
+  </nav>
+</div>
+
+<!-- COLLECTION HERO -->
+<section class="collection-hero">
+  <div style="max-width: 800px; margin: 0 auto;">
+    <h1 style="font-size: 2.5rem;">Special Collections</h1>
+    <p style="font-size: 1.1rem; color: var(--dark-gray); margin-top: 1rem;">Curated collaborations and limited editions</p>
+  </div>
+</section>
+
+<!-- FEATURED COLLECTIONS -->
+<section>
+  <h2 style="margin-bottom: 3rem;">Trending Now</h2>
+  <div class="grid grid-3">
+    
+    <div class="collection-card">
+      <div class="collection-image">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect fill='%23f0e6e0' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='%23999' text-anchor='middle' dy='.3em'%3EUT Collab%3C/text%3E%3C/svg%3E" alt="UT Collection">
+      </div>
+      <div class="collection-info">
+        <div class="collection-badge">Limited Edition</div>
+        <h3>UT x Artist Collab</h3>
+        <p class="collection-description">Exclusive graphic tees and apparel featuring artwork from renowned contemporary artists.</p>
+        <div class="collection-stats">
+          <div class="collection-stat">📍 Spring 2026</div>
+          <div class="collection-stat">🎨 12 Designs</div>
+        </div>
+        <button class="btn primary" style="width: 100%;">Shop Collection</button>
+      </div>
+    </div>
+
+    <div class="collection-card">
+      <div class="collection-image">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect fill='%23e8f0e0' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='%23999' text-anchor='middle' dy='.3em'%3ESustainable%3C/text%3E%3C/svg%3E" alt="Sustainable">
+      </div>
+      <div class="collection-info">
+        <div class="collection-badge">Eco-Friendly</div>
+        <h3>Sustainable Future</h3>
+        <p class="collection-description">Made from organic cotton and recycled materials. Our commitment to a better planet.</p>
+        <div class="collection-stats">
+          <div class="collection-stat">♻️ 100% Eco</div>
+          <div class="collection-stat">🌱 Organic</div>
+        </div>
+        <button class="btn primary" style="width: 100%;">Shop Collection</button>
+      </div>
+    </div>
+
+    <div class="collection-card">
+      <div class="collection-image">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect fill='%23e0f0f8' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='%23999' text-anchor='middle' dy='.3em'%3EMinimal%3C/text%3E%3C/svg%3E" alt="Minimal">
+      </div>
+      <div class="collection-info">
+        <div class="collection-badge">New Arrival</div>
+        <h3>Minimal Essentials</h3>
+        <p class="collection-description">Back to basics. Timeless pieces in neutral tones designed for everyday simplicity.</p>
+        <div class="collection-stats">
+          <div class="collection-stat">⚪ Neutral</div>
+          <div class="collection-stat">🕐 Timeless</div>
+        </div>
+        <button class="btn primary" style="width: 100%;">Shop Collection</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MORE COLLECTIONS -->
+<section>
+  <h2 style="margin-bottom: 3rem;">Past Collections</h2>
+  <div class="grid grid-3">
+    
+    <div class="collection-card">
+      <div class="collection-image">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect fill='%23fce8e0' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='20' fill='%23999' text-anchor='middle' dy='.3em'%3EWinter 2025%3C/text%3E%3C/svg%3E" alt="Winter Collection">
+      </div>
+      <div class="collection-info">
+        <h3>Warm Essentials</h3>
+        <p class="collection-description">Cozy wool blends and thermal layers for cold weather comfort.</p>
+        <div class="collection-stats">
+          <div class="collection-stat">❄️ Winter</div>
+        </div>
+        <button class="btn">View Collection</button>
+      </div>
+    </div>
+
+    <div class="collection-card">
+      <div class="collection-image">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect fill='%23e0f8e0' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='20' fill='%23999' text-anchor='middle' dy='.3em'%3EFall 2025%3C/text%3E%3C/svg%3E" alt="Fall Collection">
+      </div>
+      <div class="collection-info">
+        <h3>Autumn Layers</h3>
+        <p class="collection-description">Lightweight jackets and versatile pieces for transitional seasons.</p>
+        <div class="collection-stats">
+          <div class="collection-stat">🍂 Autumn</div>
+        </div>
+        <button class="btn">View Collection</button>
+      </div>
+    </div>
+
+    <div class="collection-card">
+      <div class="collection-image">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect fill='%23fff0e0' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='20' fill='%23999' text-anchor='middle' dy='.3em'%3ESummer 2025%3C/text%3E%3C/svg%3E" alt="Summer Collection">
+      </div>
+      <div class="collection-info">
+        <h3>Summer Breeze</h3>
+        <p class="collection-description">Light, breathable fabrics perfect for warm weather adventures.</p>
+        <div class="collection-stats">
+          <div class="collection-stat">☀️ Summer</div>
+        </div>
+        <button class="btn">View Collection</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="about.html">About Us</a>
+      <a href="#">Help & Support</a>
+      <a href="#">Stores</a>
+      <a href="#">Careers</a>
+      <a href="#">Sustainability</a>
+    </div>
+
+    <div style="margin-top: 2rem; font-size: 1.25rem; letter-spacing: 1px;">
+      Follow us: 
+      <span style="cursor: pointer; margin: 0 0.5rem;">f</span>
+      <span style="cursor: pointer; margin: 0 0.5rem;">𝕏</span>
+      <span style="cursor: pointer; margin: 0 0.5rem;">📷</span>
+    </div>
+
+    <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--dark-gray);">© 2026 LIFEWEAR. All rights reserved.</p>
+  </div>
+
+  <div class="marquee">
+    <div class="marquee-content">
+      ✦ Timeless Quality Since 1984 ✦ Intelligent Simplicity ✦ Made for Everyone ✦ Timeless Quality Since 1984 ✦ Intelligent Simplicity ✦ Made for Everyone ✦
+    </div>
+  </div>
+</footer>
+
+<!-- SEARCH MODAL -->
+<div class="modal" id="searchModal">
+  <div class="modal-content">
+    <div class="modal-title-bar">
+      <span>SEARCH</span>
+      <span class="modal-close">✕</span>
+    </div>
+    <input type="text" class="search-input" placeholder="Search collections...">
+    <div class="search-results">
+      <div class="search-result">UT Collab</div>
+      <div class="search-result">Sustainable</div>
+      <div class="search-result">Minimal</div>
+      <div class="search-result">Winter</div>
+      <div class="search-result">Summer</div>
+      <div class="search-result">Autumn</div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

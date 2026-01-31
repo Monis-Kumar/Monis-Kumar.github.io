@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Men's Collection — LIFEWEAR</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .filter-bar {
+      background-color: var(--light-gray);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border: 1px dashed var(--medium-gray);
+    }
+
+    .filter-bar h3 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .filter-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .filter-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .filter-group input[type="checkbox"] {
+      margin-right: 0.5rem;
+      cursor: pointer;
+    }
+
+    .filter-group select {
+      width: 100%;
+      padding: 0.5rem;
+      border: 2px solid var(--primary-black);
+      font-family: var(--font-sans);
+      box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.8), inset -1px -1px 0 rgba(0, 0, 0, 0.2);
+      background-color: var(--primary-white);
+    }
+
+    @media (max-width: 768px) {
+      .filter-bar {
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-container">
+    <div class="logo">LIFEWEAR</div>
+    
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="women.html">Women</a>
+      <a href="men.html">Men</a>
+      <a href="kids.html">Kids</a>
+      <a href="collections.html">Collections</a>
+    </nav>
+    
+    <div class="nav-icons">
+      <span class="nav-icon search-icon" title="Search">🔍</span>
+      <span class="nav-icon" title="Account">👤</span>
+      <span class="nav-icon" title="Favorites">♡</span>
+      <span class="nav-icon" title="Cart">🛒</span>
+    </div>
+    
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu">
+  <div class="mobile-menu-close">✕</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="women.html">Women</a>
+    <a href="men.html">Men</a>
+    <a href="kids.html">Kids</a>
+    <a href="collections.html">Collections</a>
+    <a href="about.html">About</a>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section class="hero" style="height: 300px;">
+  <div class="hero-content">
+    <h1 style="font-size: 2.5rem;">Men's Collection</h1>
+    <p class="hero-tagline">Essential Everyday Style</p>
+  </div>
+</section>
+
+<!-- FILTER & PRODUCTS SECTION -->
+<section>
+  <div style="display: grid; grid-template-columns: 250px 1fr; gap: 2rem; max-width: 1400px; margin: 0 auto;">
+    
+    <!-- FILTER BAR -->
+    <aside class="filter-bar">
+      <h3>Filter</h3>
+      
+      <div class="filter-group">
+        <label><strong>Size</strong></label>
+        <select>
+          <option>All Sizes</option>
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>2XL</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label><strong>Color</strong></label>
+        <label><input type="checkbox"> Black</label>
+        <label><input type="checkbox"> White</label>
+        <label><input type="checkbox"> Gray</label>
+        <label><input type="checkbox"> Navy</label>
+        <label><input type="checkbox"> Khaki</label>
+      </div>
+
+      <div class="filter-group">
+        <label><strong>Price</strong></label>
+        <select>
+          <option>All Prices</option>
+          <option>Under $50</option>
+          <option>$50 - $100</option>
+          <option>$100+</option>
+        </select>
+      </div>
+
+      <button class="btn" style="width: 100%; margin-top: 1rem;">Reset Filters</button>
+    </aside>
+
+    <!-- PRODUCTS GRID -->
+    <div class="grid grid-4">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='300'%3E%3Crect fill='%23f5f5f5' width='250' height='300'/%3E%3C/svg%3E" alt="Airism Cotton T-Shirt">
+        </div>
+        <div class="product-info">
+          <div class="product-name">Airism Cotton T-Shirt</div>
+          <div class="product-price">$29.90</div>
+          <button class="btn quick-view-btn">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='300'%3E%3Crect fill='%23f5f5f5' width='250' height='300'/%3E%3C/svg%3E" alt="Oxford Button Down">
+        </div>
+        <div class="product-info">
+          <div class="product-name">Oxford Button Down</div>
+          <div class="product-price">$59.90</div>
+          <button class="btn quick-view-btn">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='300'%3E%3Crect fill='%23f5f5f5' width='250' height='300'/%3E%3C/svg%3E" alt="Chino Pants">
+        </div>
+        <div class="product-info">
+          <div class="product-name">Regular Fit Chinos</div>
+          <div class="product-price">$59.90</div>
+          <button class="btn quick-view-btn">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='300'%3E%3Crect fill='%23f5f5f5' width='250' height='300'/%3E%3C/svg%3E" alt="Ultra Light Down Jacket">
+        </div>
+        <div class="product-info">
+          <div class="product-name">Ultra Light Down Jacket</div>
+          <div class="product-price">$99.90</div>
+          <button class="btn quick-view-btn">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='300'%3E%3Crect fill='%23f5f5f5' width='250' height='300'/%3E%3C/svg%3E" alt="Crew Neck Sweater">
+        </div>
+        <div class="product-info">
+          <div class="product-name">Merino Wool Sweater</div>
+          <div class="product-price">$79.90</div>
+          <button class="btn quick-view-btn">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='300'%3E%3Crect fill='%23f5f5f5' width='250' height='300'/%3E%3C/svg%3E" alt="Straight Leg Denim">
+        </div>
+        <div class="product-info">
+          <div class="product-name">Straight Leg Denim</div>
+          <div class="product-price">$69.90</div>
+          <button class="btn quick-view-btn">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='300'%3E%3Crect fill='%23f5f5f5' width='250' height='300'/%3E%3C/svg%3E" alt="Polo Shirt">
+        </div>
+        <div class="product-info">
+          <div class="product-name">Pique Polo Shirt</div>
+          <div class="product-price">$39.90</div>
+          <button class="btn quick-view-btn">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='300'%3E%3Crect fill='%23f5f5f5' width='250' height='300'/%3E%3C/svg%3E" alt="Hoodie">
+        </div>
+        <div class="product-info">
+          <div class="product-name">Fleece Hoodie</div>
+          <div class="product-price">$79.90</div>
+          <button class="btn quick-view-btn">Quick View</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="about.html">About Us</a>
+      <a href="#">Help & Support</a>
+      <a href="#">Stores</a>
+      <a href="#">Careers</a>
+      <a href="#">Sustainability</a>
+    </div>
+
+    <div style="margin-top: 2rem; font-size: 1.25rem; letter-spacing: 1px;">
+      Follow us: 
+      <span style="cursor: pointer; margin: 0 0.5rem;">f</span>
+      <span style="cursor: pointer; margin: 0 0.5rem;">𝕏</span>
+      <span style="cursor: pointer; margin: 0 0.5rem;">📷</span>
+    </div>
+
+    <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--dark-gray);">© 2026 LIFEWEAR. All rights reserved.</p>
+  </div>
+
+  <div class="marquee">
+    <div class="marquee-content">
+      ✦ Timeless Quality Since 1984 ✦ Intelligent Simplicity ✦ Made for Everyone ✦ Timeless Quality Since 1984 ✦ Intelligent Simplicity ✦ Made for Everyone ✦
+    </div>
+  </div>
+</footer>
+
+<!-- SEARCH MODAL -->
+<div class="modal" id="searchModal">
+  <div class="modal-content">
+    <div class="modal-title-bar">
+      <span>SEARCH</span>
+      <span class="modal-close">✕</span>
+    </div>
+    <input type="text" class="search-input" placeholder="Search products...">
+    <div class="search-results">
+      <div class="search-result">Airism T-Shirt</div>
+      <div class="search-result">Oxford Shirt</div>
+      <div class="search-result">Chinos</div>
+      <div class="search-result">Down Jacket</div>
+      <div class="search-result">Sweater</div>
+      <div class="search-result">Denim</div>
+    </div>
+  </div>
+</div>
+
+<!-- QUICK VIEW MODAL -->
+<div class="modal" id="quickViewModal">
+  <div class="modal-content">
+    <div class="modal-title-bar">
+      <span>QUICK VIEW</span>
+      <span class="modal-close quick-view-close">✕</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+      <div>
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='250'%3E%3Crect fill='%23f0f0f0' width='200' height='250'/%3E%3C/svg%3E" alt="Product Image" style="width: 100%; margin-bottom: 1rem;">
+      </div>
+      <div>
+        <h3>Selected Product</h3>
+        <p style="font-size: 1.25rem; color: var(--accent-red); font-weight: bold; margin: 1rem 0;">Price</p>
+        <label style="display: block; margin-bottom: 1rem;">
+          <strong>Size:</strong><br>
+          <select style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; border: 2px solid var(--primary-black); font-family: var(--font-sans);">
+            <option>XS</option>
+            <option>S</option>
+            <option selected>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>2XL</option>
+          </select>
+        </label>
+        <button class="btn primary" style="width: 100%;">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
