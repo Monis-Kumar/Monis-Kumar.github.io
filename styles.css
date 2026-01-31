@@ -1,8 +1,3 @@
-/* ========================================
-   RETRO-MINIMAL UNIQLO WEBSITE - SHARED CSS
-   90s/Y2K meets Modern Minimalism
-   ======================================== */
-
 /* CSS RESET & VARIABLES */
 * {
   margin: 0;
@@ -471,8 +466,7 @@ footer {
 }
 
 .marquee-content {
-  display: flex;
-   text-align: justify;
+  display: inline-block;
   padding-left: 100%;
   animation: scroll 15s linear infinite;
 }
